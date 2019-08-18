@@ -22,7 +22,7 @@ import full06 from '../assets/images/fulls/06.jpg'
 const DEFAULT_IMAGES = [
   {
     id: '1',
-    source: full01,
+    source: thumb01,
     thumbnail: thumb01,
     caption: 'Full Stack Software Developer at BBD',
     description:
@@ -30,7 +30,7 @@ const DEFAULT_IMAGES = [
   },
   {
     id: '2',
-    source: full02,
+    source: thumb02,
     thumbnail: thumb02,
     caption: 'Full Stack Software Developer & Team lead at Continuon',
     description:
@@ -38,7 +38,7 @@ const DEFAULT_IMAGES = [
   },
   {
     id: '3',
-    source: full03,
+    source: thumb03,
     thumbnail: thumb03,
     caption: 'Full Stack Software Developer at Dreamstate Interactive',
     description:
@@ -46,7 +46,7 @@ const DEFAULT_IMAGES = [
   },
   {
     id: '4',
-    source: full04,
+    source: thumb04,
     thumbnail: thumb04,
     caption: '3D Visualization Artist at Pattichides & Partners',
     description:
@@ -57,31 +57,31 @@ const DEFAULT_IMAGES = [
 const PORTFOLIO = [
   {
     id: '1',
-    source: full04,
-    thumbnail: thumb04,
-    caption: 'Freelance | Cherrymoss Accounting',
-    description: 'http://www.cherrymossaccounting.co.za/',
+    source: full05,
+    thumbnail: thumb05,
+    caption: 'DSI | National Lottery',
+    description: 'https://www.nationallottery.co.za/',
   },
   {
     id: '2',
     source: full05,
     thumbnail: thumb05,
-    caption: 'Photo 5',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    caption: 'DSI | Dreamstate Interactive',
+    description: 'http://www.dsisa.co.za/',
   },
   {
     id: '3',
-    source: full06,
-    thumbnail: thumb06,
-    caption: 'Photo 6',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    source: full05,
+    thumbnail: thumb05,
+    caption: 'Freelance | Cherrymoss Accounting',
+    description: 'http://www.cherrymossaccounting.co.za/',
   },
   {
     id: '4',
-    source: full06,
-    thumbnail: thumb06,
-    caption: 'Photo 6',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    source: full05,
+    thumbnail: thumb05,
+    caption: 'Freelance | Craft Loyalty',
+    description: 'http://craftloyalty.co.za/',
   },
 ]
 
@@ -231,7 +231,7 @@ class HomeIndex extends React.Component {
                     <h3 className="icon fa-mobile">
                       <span className="label">Phone</span>
                     </h3>
-                    +2783 401 6400
+                    +27 83 401 6400
                   </li>
                   <li>
                     <h3 className="icon fa-envelope-o">
