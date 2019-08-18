@@ -24,39 +24,60 @@ const DEFAULT_IMAGES = [
     id: '1',
     source: full01,
     thumbnail: thumb01,
-    caption: 'BBD & Turfsport',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    caption: 'Full Stack Software Developer at BBD',
+    description:
+      'Currently stationed as a consultant at a wagering solutions client, creating a product for online & high traffic use. Bookmakers are able to fully customise their client facing software in a safe & secure way. Ultimately, the product will be SANS & GLI approved - working through and with the required regulations makes an interesting challenge',
   },
   {
     id: '2',
     source: full02,
     thumbnail: thumb02,
-    caption: 'Continuon',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    caption: 'Full Stack Software Developer & Team lead at Continuon',
+    description:
+      'Building a personalised marketing & social intelligence platform. Continuon allows brands to find their voice in an increasingly cluttered world. Understand peoples interests and influence based on deep behavioural insights, build personalised campaigns to engage & nurture them, resulting in increased brand advocacy and authentic one-to-one relationships.',
   },
   {
     id: '3',
     source: full03,
     thumbnail: thumb03,
-    caption: 'Dreamstate Interactive',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    caption: 'Full Stack Software Developer at Dreamstate Interactive',
+    description:
+      'At the time I was managing a team of 3 developers, doing client management, project management and development as well. Majority of my time was spent on building custom web based solutions. This ranges from Laboratory -, Helpdesk/Ticketing -, Website CMS - and Cloud based Business Management solutions. I enjoyed being able to work as a full stack developer and working for a small software company. This forced me to learned faster and adapt quickly as I often found myself in difficult situations. Being challenged is great.',
   },
   {
     id: '4',
     source: full04,
     thumbnail: thumb04,
-    caption: 'Photo 4',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    caption: '3D Visualization Artist at Pattichides & Partners',
+    description:
+      'Creating photo realistic renders by using 3Ds Max Design, AutoCAD, VRAY and Adobe Photoshop',
+  },
+]
+
+const PORTFOLIO = [
+  {
+    id: '1',
+    source: full04,
+    thumbnail: thumb04,
+    caption: 'Freelance | Cherrymoss Accounting',
+    description: 'http://www.cherrymossaccounting.co.za/',
   },
   {
-    id: '5',
+    id: '2',
     source: full05,
     thumbnail: thumb05,
     caption: 'Photo 5',
     description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
   },
   {
-    id: '6',
+    id: '3',
+    source: full06,
+    thumbnail: thumb06,
+    caption: 'Photo 6',
+    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+  },
+  {
+    id: '4',
     source: full06,
     thumbnail: thumb06,
     caption: 'Photo 6',
@@ -96,10 +117,25 @@ class HomeIndex extends React.Component {
           </section>
 
           <section id="two">
-            <h2>Companies & Projects I've worked with</h2>
+            <h2>Companies I've worked with</h2>
 
             <Gallery
               images={DEFAULT_IMAGES.map(
+                ({ id, source, thumbnail, caption, description }) => ({
+                  source,
+                  thumbnail,
+                  caption,
+                  description,
+                })
+              )}
+            />
+          </section>
+
+          <section id="two">
+            <h2>Portfolio pieces</h2>
+
+            <Gallery
+              images={PORTFOLIO.map(
                 ({ id, source, thumbnail, caption, description }) => ({
                   source,
                   thumbnail,
@@ -154,14 +190,16 @@ class HomeIndex extends React.Component {
                       />
                     </div>
                     <div className="12u">
-                      <select>
-                        <option value="business">Business</option>
-                        <option value="websites">Websites</option>
-                        <option value="hire">Hire</option>
-                        <option value="freelance">Freelance</option>
-                        <option value="other">Other</option>
-                      </select>
-                      <br />
+                      <div>
+                        <select>
+                          <option value="Websites">Websites</option>
+                          <option value="hire">Hire</option>
+                          <option value="freelance">Freelance</option>
+                          <option value="other">Other</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div className="12u">
                       <textarea
                         name="message"
                         id="message"
