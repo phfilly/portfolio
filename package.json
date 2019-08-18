@@ -1,7 +1,7 @@
 {
   "name": "portfolio-website",
   "description": "Portfolio Website",
-  "version": "1.0",
+  "version": "1.0.0",
   "author": "Philip du Toit",
   "dependencies": {
     "gatsby": "^2.2.9",
