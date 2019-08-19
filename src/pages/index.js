@@ -11,6 +11,10 @@ import thumb03 from '../assets/images/thumbs/03.jpg'
 import thumb04 from '../assets/images/thumbs/04.jpg'
 import thumb05 from '../assets/images/thumbs/05.jpg'
 import thumb06 from '../assets/images/thumbs/06.jpg'
+import thumb07 from '../assets/images/thumbs/07.jpg'
+import thumb08 from '../assets/images/thumbs/08.jpg'
+import thumb09 from '../assets/images/thumbs/09.jpg'
+import thumb10 from '../assets/images/thumbs/10.jpg'
 
 import full01 from '../assets/images/fulls/01.jpg'
 import full02 from '../assets/images/fulls/02.jpg'
@@ -57,31 +61,59 @@ const DEFAULT_IMAGES = [
 const PORTFOLIO = [
   {
     id: '1',
-    source: full05,
-    thumbnail: thumb05,
-    caption: 'DSI | National Lottery',
-    description: 'https://www.nationallottery.co.za/',
+    source: thumb02,
+    thumbnail: thumb02,
+    caption: 'Continuon | Social Intelligence Platform',
+    description: 'https://www.continuon.co',
+  },
+  {
+    id: '1',
+    source: thumb03,
+    thumbnail: thumb03,
+    caption: 'DSI | Initial Saudi Arabia',
+    description: 'Helpdesk Ticketing system for King Abdullah Economic City',
   },
   {
     id: '2',
-    source: full05,
+    source: thumb08,
+    thumbnail: thumb08,
+    caption: 'DSI | National Lottery',
+    description: 'https://www.nationallottery.co.za',
+  },
+  {
+    id: '3',
+    source: thumb05,
     thumbnail: thumb05,
     caption: 'DSI | Dreamstate Interactive',
     description: 'http://www.dsisa.co.za/',
   },
   {
-    id: '3',
-    source: full05,
-    thumbnail: thumb05,
-    caption: 'Freelance | Cherrymoss Accounting',
+    id: '4',
+    source: thumb09,
+    thumbnail: thumb09,
+    caption: 'DSI | Cherrymoss Accounting',
     description: 'http://www.cherrymossaccounting.co.za/',
   },
   {
-    id: '4',
-    source: full05,
-    thumbnail: thumb05,
+    id: '5',
+    source: thumb10,
+    thumbnail: thumb10,
+    caption: 'DSI | DSI Design',
+    description: 'http://design.dsisa.co.za/home',
+  },
+  {
+    id: '6',
+    source: thumb06,
+    thumbnail: thumb06,
     caption: 'Freelance | Craft Loyalty',
     description: 'http://craftloyalty.co.za/',
+  },
+  {
+    id: '7',
+    source: thumb07,
+    thumbnail: thumb07,
+    caption: 'DSI | Food Consulting Services',
+    description: 'https://foodconsulting.co.za',
   },
 ]
 
