@@ -887,6 +887,26 @@
 			margin: 0 0 (_size(element-margin) * 0.25) 0;
 		}
 
+		.view-site {
+			color: _palette(accent2, bg);
+			float: right;
+		}
+
+		.stack-container {
+			display: flex;
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+
+			.tech-item {
+				background-color: #eee;
+				padding: 0px 7px;
+				border-radius: 18px;
+				text-transform: capitalize;
+				font-size: 12px;
+				margin: 2px 0px;
+			}
+		}
+
 		p {
 			font-size: 0.8em;
 			line-height: 1.5em;
@@ -907,7 +927,7 @@
 		background-position:	top left,							top left;
 		background-repeat:		repeat,								no-repeat;
 		background-size:		auto,								auto 100%;
-		color: rgba(255, 255, 255, 0.7);
+		color: _palette(accent2, bg);
 		height: 100%;
 		left: 0;
 		padding: ($size-header-pad * 2) $size-header-pad;
@@ -935,7 +955,7 @@
 		}
 
 		h1 {
-			color: _palette(accent2, fg);
+			color: rgba(255, 255, 255, 0.7);
 			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;

@@ -61,59 +61,121 @@ const DEFAULT_IMAGES = [
 const PORTFOLIO = [
   {
     id: '1',
-    source: thumb02,
-    thumbnail: thumb02,
-    caption: 'Continuon | Social Intelligence Platform',
-    description: 'https://www.continuon.co',
-  },
-  {
-    id: '1',
-    source: thumb03,
-    thumbnail: thumb03,
-    caption: 'DSI | Initial Saudi Arabia',
-    description: 'Helpdesk Ticketing system for King Abdullah Economic City',
+    source: thumb01,
+    thumbnail: thumb01,
+    caption: 'BBD | Turfsport',
+    site: 'https://www.turfsport.co.za',
+    description:
+      "I'm part of a team that's building a wagering software which will allow for online betting in sports, numbers and horse racing",
+    tech: [
+      'Angular',
+      'NoSQL',
+      'SASS',
+      'python',
+      'AWS Services 10+',
+      'TFS',
+      'html',
+      'css',
+    ],
   },
   {
     id: '2',
-    source: thumb08,
-    thumbnail: thumb08,
-    caption: 'DSI | National Lottery',
-    description: 'https://www.nationallottery.co.za',
-  },
-  {
-    id: '3',
-    source: thumb05,
-    thumbnail: thumb05,
-    caption: 'DSI | Dreamstate Interactive',
-    description: 'http://www.dsisa.co.za/',
+    source: thumb02,
+    thumbnail: thumb02,
+    caption: 'Continuon | Social Intelligence Platform',
+    site: 'https://www.continuon.co',
+    description:
+      'We created an intelligence platform that helped brands understand their social media communities & content, identify nano-influencers, and build data-driven campaigns that increase ROI.',
+    tech: [
+      'vuejs',
+      'Laravel',
+      'OrientDB(graph db)',
+      'mysql',
+      'posgreSQL',
+      'SASS',
+      'docker',
+      'python',
+      'AWS Services 10+',
+      'html',
+      'css',
+    ],
   },
   {
     id: '4',
-    source: thumb09,
-    thumbnail: thumb09,
-    caption: 'DSI | Cherrymoss Accounting',
-    description: 'http://www.cherrymossaccounting.co.za/',
+    source: thumb08,
+    thumbnail: thumb08,
+    caption: 'DSI | National Lottery',
+    site: 'https://www.nationallottery.co.za',
+    description:
+      'A small team of us at DSI built our national lottery website in 2017, where we also implemented a BI dashboard/Payment services for the client',
+    tech: ['html', 'css', 'jquery', 'javascript', 'php', 'mysql', 'wordpress'],
   },
   {
     id: '5',
-    source: thumb10,
-    thumbnail: thumb10,
-    caption: 'DSI | DSI Design',
-    description: 'http://design.dsisa.co.za/home',
+    source: thumb05,
+    thumbnail: thumb05,
+    caption: 'DSI | Dreamstate Interactive',
+    description:
+      'We created white label business solutions to solve problems within a company or industry. To do this, we created a Cloud based web platform called DreamER. This system allowed for multiple input channels to receive and collate data into a controllable and centralized system',
+    site: 'http://www.dsisa.co.za/',
+    tech: ['html', 'css', 'jquery', 'javascript', 'php', 'mysql'],
+  },
+  {
+    id: '3',
+    source: thumb03,
+    thumbnail: thumb03,
+    caption: 'DSI | Initial Saudi Arabia',
+    description:
+      'I help built a helpdesk ticketing system with BI dashboards for King Abdullah Economic City in Jeddah',
+    tech: ['html', 'css', 'jquery', 'javascript', 'php', 'mysql'],
   },
   {
     id: '6',
-    source: thumb06,
-    thumbnail: thumb06,
-    caption: 'Freelance | Craft Loyalty',
-    description: 'http://craftloyalty.co.za/',
-  },
-  {
-    id: '7',
     source: thumb07,
     thumbnail: thumb07,
     caption: 'DSI | Food Consulting Services',
-    description: 'https://foodconsulting.co.za',
+    description:
+      "I maintained and improved FCS's Laboratory system to help with daily capturing of samples and automating reports for clients",
+    site: 'https://foodconsulting.co.za',
+    tech: ['html', 'css', 'jquery', 'javascript', 'php', 'mysql'],
+  },
+  {
+    id: '7',
+    source: thumb09,
+    thumbnail: thumb09,
+    caption: 'DSI | Cherrymoss Accounting',
+    description: 'A small company website with a PHP CMS system',
+    site: 'http://www.cherrymossaccounting.co.za/',
+    tech: ['html', 'css', 'jquery', 'javascript', 'php', 'mysql'],
+  },
+  {
+    id: '8',
+    source: thumb10,
+    thumbnail: thumb10,
+    caption: 'DSI | DSI Design',
+    description:
+      'Built a design website for one of our departments at the time to help promote their services',
+    site: 'http://design.dsisa.co.za/home',
+    tech: ['html', 'css', 'jquery', 'javascript', 'php', 'mysql'],
+  },
+  {
+    id: '9',
+    source: thumb06,
+    thumbnail: thumb06,
+    caption: 'Freelance | Craft Loyalty',
+    description:
+      'Website I did for a small company in Jhb which focuses on loyalty payment rewards in Africa',
+    site: 'http://craftloyalty.co.za/',
+    tech: [
+      'html',
+      'css',
+      'jquery',
+      'javascript',
+      'php',
+      'mysql',
+      'google analytics',
+      'wordpress',
+    ],
   },
 ]
 
@@ -165,14 +227,28 @@ class HomeIndex extends React.Component {
 
           <section id="two">
             <h2>Portfolio pieces</h2>
-
+            <p>
+              Please note some of the items below are not publicly accessible or
+              changed, but feel free to contact me for more info
+            </p>
             <Gallery
               images={PORTFOLIO.map(
-                ({ id, source, thumbnail, caption, description }) => ({
+                ({
+                  id,
                   source,
                   thumbnail,
                   caption,
                   description,
+                  site,
+                  tech,
+                }) => ({
+                  id,
+                  source,
+                  thumbnail,
+                  caption,
+                  description,
+                  site,
+                  tech,
                 })
               )}
             />
@@ -237,7 +313,7 @@ class HomeIndex extends React.Component {
                         id="message"
                         placeholder="Message"
                         rows="4"
-                      ></textarea>
+                      />
                     </div>
                   </div>
                 </form>
