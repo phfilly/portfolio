@@ -112,8 +112,8 @@ const PORTFOLIO = [
   },
   {
     id: '5',
-    source: thumb08,
-    thumbnail: thumb08,
+    source: thumb05,
+    thumbnail: thumb05,
     caption: 'DSI | Resmed',
     description:
       'I installed and maintained a Laboratory management system for a blood lab in Lubumbashi, Democratic Republic of the Congo in early 2017',
@@ -125,17 +125,8 @@ const PORTFOLIO = [
     thumbnail: thumb05,
     caption: 'DSI | Dreamstate Interactive',
     description:
-      'I was part of a small team that created white label solutions to solve problems within a company or industry. To do this, we created a Cloud based web platform called DreamER. This system allowed for multiple input channels to receive and collate data into a centralized system',
+      'We created a Cloud based web platform called DreamER which could be white labeled. This system allowed for multiple input channels to receive and collate data into a centralized system',
     site: 'http://www.dsisa.co.za/',
-    tech: ['html', 'css', 'jquery', 'javascript', 'php', 'mysql'],
-  },
-  {
-    id: '7',
-    source: thumb03,
-    thumbnail: thumb03,
-    caption: 'DSI | Initial Saudi Arabia',
-    description:
-      'I help build a helpdesk ticketing system for King Abdullah Economic City in Jeddah 2016-2017',
     tech: ['html', 'css', 'jquery', 'javascript', 'php', 'mysql'],
   },
   {
@@ -146,6 +137,15 @@ const PORTFOLIO = [
     description:
       "I maintained and improved FCS's Laboratory system to help with daily capturing of samples and automating reports for clients & internal use",
     site: 'https://foodconsulting.co.za',
+    tech: ['html', 'css', 'jquery', 'javascript', 'php', 'mysql'],
+  },
+  {
+    id: '7',
+    source: thumb03,
+    thumbnail: thumb03,
+    caption: 'DSI | Initial Saudi Arabia',
+    description:
+      'I help build a helpdesk ticketing system for King Abdullah Economic City in Jeddah 2016-2017',
     tech: ['html', 'css', 'jquery', 'javascript', 'php', 'mysql'],
   },
   {
@@ -190,6 +190,12 @@ const PORTFOLIO = [
 ]
 
 class HomeIndex extends React.Component {
+  errorMessage = ''
+
+  handleSubmit(event) {
+    event.preventDefault()
+  }
+
   render() {
     const siteTitle = 'Philip du Toit - Software Developer'
     const siteDescription = 'Software Developer'
@@ -289,7 +295,7 @@ class HomeIndex extends React.Component {
             <p>I would love to hear from you.</p>
             <div className="row">
               <div className="8u 12u$(small)">
-                <form method="post" action="#">
+                <form onSubmit={this.handleSubmit}>
                   <div className="row uniform 50%">
                     <div className="6u 12u$(xsmall)">
                       <input
@@ -326,12 +332,14 @@ class HomeIndex extends React.Component {
                       />
                     </div>
                   </div>
+                  <br />
+                  <div>{this.errorMessage}</div>
+                  {/* <ul className="actions">
+                    <li>
+                      <input type="submit" value="Send Message" />
+                    </li>
+                  </ul> */}
                 </form>
-                <ul className="actions">
-                  <li>
-                    <input type="submit" value="Send Message" />
-                  </li>
-                </ul>
               </div>
               <div className="4u 12u$(small)">
                 <ul className="labeled-icons">
