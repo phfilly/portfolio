@@ -66,7 +66,7 @@ const PORTFOLIO = [
     caption: 'BBD | Turfsport',
     site: 'https://www.turfsport.co.za',
     description:
-      "I'm part of a team that's building a wagering software which will allow for online betting in sports, numbers and horse racing",
+      "I'm part of a team that's building a wagering software solution which will allow for online betting in sports, numbers and horse racing.",
     tech: [
       'Angular',
       'NoSQL',
@@ -85,7 +85,7 @@ const PORTFOLIO = [
     caption: 'Continuon | Social Intelligence Platform',
     site: 'https://www.continuon.co',
     description:
-      'We created an intelligence platform that helped brands understand their social media communities & content, identify nano-influencers, and build data-driven campaigns that increase ROI.',
+      'We created an intelligence platform that helped brands understand their social media communities & content, identify nano-influencers, and build data-driven campaigns that increased ROI.',
     tech: [
       'vuejs',
       'Laravel',
@@ -107,7 +107,7 @@ const PORTFOLIO = [
     caption: 'DSI | National Lottery',
     site: 'https://www.nationallottery.co.za',
     description:
-      'A small team of us at DSI built our national lottery website in 2017, where we also implemented a BI dashboard/Payment services for the client',
+      'A small team of us at DSI built the ZA national lottery website in 2017, where we also extended it BI dashboards & Payment services for online play',
     tech: ['html', 'css', 'jquery', 'javascript', 'php', 'mysql', 'wordpress'],
   },
   {
@@ -116,7 +116,7 @@ const PORTFOLIO = [
     thumbnail: thumb05,
     caption: 'DSI | Dreamstate Interactive',
     description:
-      'We created white label business solutions to solve problems within a company or industry. To do this, we created a Cloud based web platform called DreamER. This system allowed for multiple input channels to receive and collate data into a controllable and centralized system',
+      'I was part of a small team that created white label solutions to solve problems within a company or industry. To do this, we created a Cloud based web platform called DreamER. This system allowed for multiple input channels to receive and collate data into a centralized system',
     site: 'http://www.dsisa.co.za/',
     tech: ['html', 'css', 'jquery', 'javascript', 'php', 'mysql'],
   },
@@ -126,7 +126,7 @@ const PORTFOLIO = [
     thumbnail: thumb03,
     caption: 'DSI | Initial Saudi Arabia',
     description:
-      'I help built a helpdesk ticketing system with BI dashboards for King Abdullah Economic City in Jeddah',
+      'I help build a helpdesk ticketing system for King Abdullah Economic City in Jeddah 2016-2017',
     tech: ['html', 'css', 'jquery', 'javascript', 'php', 'mysql'],
   },
   {
@@ -135,7 +135,7 @@ const PORTFOLIO = [
     thumbnail: thumb07,
     caption: 'DSI | Food Consulting Services',
     description:
-      "I maintained and improved FCS's Laboratory system to help with daily capturing of samples and automating reports for clients",
+      "I maintained and improved FCS's Laboratory system to help with daily capturing of samples and automating reports for clients & internal use",
     site: 'https://foodconsulting.co.za',
     tech: ['html', 'css', 'jquery', 'javascript', 'php', 'mysql'],
   },
@@ -144,7 +144,8 @@ const PORTFOLIO = [
     source: thumb09,
     thumbnail: thumb09,
     caption: 'DSI | Cherrymoss Accounting',
-    description: 'A small company website with a PHP CMS system',
+    description:
+      'Built a company website with a PHP CMS system for an accounting client',
     site: 'http://www.cherrymossaccounting.co.za/',
     tech: ['html', 'css', 'jquery', 'javascript', 'php', 'mysql'],
   },
@@ -154,7 +155,7 @@ const PORTFOLIO = [
     thumbnail: thumb10,
     caption: 'DSI | DSI Design',
     description:
-      'Built a design website for one of our departments at the time to help promote their services',
+      'Built a design website for one of DSIs departments at the time to help promote their services independently of the parent company',
     site: 'http://design.dsisa.co.za/home',
     tech: ['html', 'css', 'jquery', 'javascript', 'php', 'mysql'],
   },
@@ -345,7 +346,7 @@ class HomeIndex extends React.Component {
                     <h3 className="icon fa-envelope-o">
                       <span className="label">Email</span>
                     </h3>
-                    <a href="#">philip@ootw.co.za</a>
+                    <a href="mailto:philip@ootw.co.za">philip@ootw.co.za</a>
                   </li>
                 </ul>
               </div>
