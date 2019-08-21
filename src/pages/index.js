@@ -107,11 +107,20 @@ const PORTFOLIO = [
     caption: 'DSI | National Lottery',
     site: 'https://www.nationallottery.co.za',
     description:
-      'A small team of us at DSI built the ZA national lottery website in 2017, where we also extended it BI dashboards & Payment services for online play',
+      'A small team of us at DSI built the ZA national lottery website in 2016-2017, where we also extended it BI dashboards & Payment services for online play',
     tech: ['html', 'css', 'jquery', 'javascript', 'php', 'mysql', 'wordpress'],
   },
   {
     id: '5',
+    source: thumb08,
+    thumbnail: thumb08,
+    caption: 'DSI | Resmed',
+    description:
+      'I installed and maintained a Laboratory management system for a blood lab in Lubumbashi, Democratic Republic of the Congo in early 2017',
+    tech: ['html', 'css', 'jquery', 'javascript', 'php', 'mysql'],
+  },
+  {
+    id: '6',
     source: thumb05,
     thumbnail: thumb05,
     caption: 'DSI | Dreamstate Interactive',
@@ -121,7 +130,7 @@ const PORTFOLIO = [
     tech: ['html', 'css', 'jquery', 'javascript', 'php', 'mysql'],
   },
   {
-    id: '3',
+    id: '7',
     source: thumb03,
     thumbnail: thumb03,
     caption: 'DSI | Initial Saudi Arabia',
@@ -130,7 +139,7 @@ const PORTFOLIO = [
     tech: ['html', 'css', 'jquery', 'javascript', 'php', 'mysql'],
   },
   {
-    id: '6',
+    id: '8',
     source: thumb07,
     thumbnail: thumb07,
     caption: 'DSI | Food Consulting Services',
@@ -140,7 +149,7 @@ const PORTFOLIO = [
     tech: ['html', 'css', 'jquery', 'javascript', 'php', 'mysql'],
   },
   {
-    id: '7',
+    id: '9',
     source: thumb09,
     thumbnail: thumb09,
     caption: 'DSI | Cherrymoss Accounting',
@@ -150,7 +159,7 @@ const PORTFOLIO = [
     tech: ['html', 'css', 'jquery', 'javascript', 'php', 'mysql'],
   },
   {
-    id: '8',
+    id: '10',
     source: thumb10,
     thumbnail: thumb10,
     caption: 'DSI | DSI Design',
@@ -160,7 +169,7 @@ const PORTFOLIO = [
     tech: ['html', 'css', 'jquery', 'javascript', 'php', 'mysql'],
   },
   {
-    id: '9',
+    id: '11',
     source: thumb06,
     thumbnail: thumb06,
     caption: 'Freelance | Craft Loyalty',
