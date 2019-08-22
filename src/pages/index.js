@@ -46,7 +46,7 @@ const DEFAULT_IMAGES = [
     thumbnail: thumb03,
     caption: 'Full Stack Software Developer at Dreamstate Interactive',
     description:
-      'At the time I was managing a team of 3 developers, doing client management, project management and development as well. Majority of my time was spent on building custom web based solutions. This ranges from Laboratory -, Helpdesk/Ticketing -, Website CMS - and Cloud based Business Management solutions. I enjoyed being able to work as a full stack developer and working for a small software company. This forced me to learned faster and adapt quickly as I often found myself in difficult situations. Being challenged is great.',
+      'At the time I was managing a team of 3 developers, doing client management, project management and development as well. Majority of my time was spent on building custom web based solutions. This ranges from Laboratory -, Helpdesk/Ticketing -, Website CMS - and Cloud based Business Management solutions. I enjoyed being able to work as a full stack developer and working for a small software company. This forced me to learn faster and adapt quickly as I often found myself in difficult situations.',
   },
   {
     id: '4',
@@ -214,7 +214,7 @@ class HomeIndex extends React.Component {
             </header>
             <p>
               I believe programming should make our lives/daily tasks easier and
-              increase efficiency. That said, my job satisfaction largely comes
+              improve efficiency. That said, my job satisfaction largely comes
               from developing purposeful builds and contributing to solutions.
             </p>
             {/* <ul className="actions">
