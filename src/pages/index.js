@@ -28,12 +28,20 @@ const DEFAULT_IMAGES = [
     id: '1',
     source: thumb01,
     thumbnail: thumb01,
-    caption: 'Full Stack Software Developer at BBD',
+    caption: 'Team lead at BBD',
     description:
-      'Currently stationed as a consultant at a wagering solutions client, creating a product for online & high traffic use. Bookmakers are able to fully customise their client facing software in a safe & secure way. Ultimately, the product will be SANS & GLI approved - working through and with the required regulations makes an interesting challenge',
+      'Currently stationed as a consultant at a UK based gambling client with a team in Cape Town. Implementing 3rd party game & wallet integrations whilst modernizing their current infrastructure',
   },
   {
     id: '2',
+    source: thumb01,
+    thumbnail: thumb01,
+    caption: 'Software Engineer at BBD',
+    description:
+      'Was part of a team on a wagering solutions client, creating a product for online & high traffic use. Bookmakers are able to fully customise their client facing software in a safe & secure way. Ultimately, the product will be SANS & GLI approved - working through and with the required regulations makes an interesting challenge',
+  },
+  {
+    id: '3',
     source: thumb02,
     thumbnail: thumb02,
     caption: 'Full Stack Software Developer & Team lead at Continuon',
@@ -41,7 +49,7 @@ const DEFAULT_IMAGES = [
       'Building a personalised marketing & social intelligence platform. Continuon allows brands to find their voice in an increasingly cluttered world. Understand peoples interests and influence based on deep behavioural insights, build personalised campaigns to engage & nurture them, resulting in increased brand advocacy and authentic one-to-one relationships.',
   },
   {
-    id: '3',
+    id: '4',
     source: thumb03,
     thumbnail: thumb03,
     caption: 'Full Stack Software Developer at Dreamstate Interactive',
@@ -49,7 +57,7 @@ const DEFAULT_IMAGES = [
       'At the time I was managing a team of 3 developers, doing client management, project management and development as well. Majority of my time was spent on building custom web based solutions. This ranges from Laboratory -, Helpdesk/Ticketing -, Website CMS - and Cloud based Business Management solutions. I enjoyed being able to work as a full stack developer and working for a small software company. This forced me to learn faster and adapt quickly as I often found myself in difficult situations.',
   },
   {
-    id: '4',
+    id: '5',
     source: thumb04,
     thumbnail: thumb04,
     caption: '3D Visualization Artist at Pattichides & Partners',
@@ -61,6 +69,20 @@ const DEFAULT_IMAGES = [
 const PORTFOLIO = [
   {
     id: '1',
+    source: thumb01,
+    thumbnail: thumb01,
+    caption: 'BBD | Rank Interactive & Shift tech',
+    site: '',
+    description:
+      "I'm part of a team that's implementing 3rd party game providers and modernizing an existing stack",
+    tech: [
+      'Java',
+      'msSQL',
+      'Jenkins'
+    ],
+  },
+  {
+    id: '2',
     source: thumb01,
     thumbnail: thumb01,
     caption: 'BBD | Turfsport',
@@ -79,7 +101,7 @@ const PORTFOLIO = [
     ],
   },
   {
-    id: '2',
+    id: '3',
     source: thumb02,
     thumbnail: thumb02,
     caption: 'Continuon | Social Intelligence Platform',
