@@ -35,6 +35,7 @@ class Gallery extends Component {
 
       let site = ''
       if (obj.site) {
+        site = '|'
         site = (
           <a href={obj.site} className="view-site">
             view site
@@ -52,11 +53,11 @@ class Gallery extends Component {
               this.toggleLightbox(i)
             }}
           >
-            <img src={obj.thumbnail} />
+            <img src={obj.thumbnail} alt={obj.thumbnail} />
           </a>
 
           <h3>
-            {obj.caption} | {site}
+            {obj.caption} {site}
           </h3>
           <p>{obj.description}</p>
           <div className="stack-container">{techStack}</div>

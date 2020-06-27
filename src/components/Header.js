@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Footer from './Footer'
 import avatar from '../assets/images/avatar.jpg'
 
@@ -8,9 +7,9 @@ class Header extends React.Component {
     return (
       <header id="header">
         <div className="inner">
-          <a href="#" className="image avatar">
-            <img src={avatar} alt="" />
-          </a>
+          <div className="image avatar">
+            <img src={avatar} alt="avatar" />
+          </div>
           <h1>
             <strong>Hi, I'm Philip</strong>, a software developer
             <br />

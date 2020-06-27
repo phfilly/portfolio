@@ -56,6 +56,10 @@
 		}
 	}
 
+	.errorMessage {
+		color: red;
+	}
+
 	body, input, select, textarea {
 		color: _palette(fg);
 		font-family: _font(family);
@@ -896,6 +900,7 @@
 			display: flex;
 			justify-content: space-evenly;
 			flex-wrap: wrap;
+			padding: 10px 0px;
 
 			.tech-item {
 				background-color: #eee;

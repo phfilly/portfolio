@@ -1,8 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import emailjs from "emailjs-com"
 
 import Layout from '../components/layout'
-// import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
 
 import thumb01 from '../assets/images/thumbs/01.jpg'
@@ -15,13 +15,6 @@ import thumb07 from '../assets/images/thumbs/07.jpg'
 import thumb08 from '../assets/images/thumbs/08.jpg'
 import thumb09 from '../assets/images/thumbs/09.jpg'
 import thumb10 from '../assets/images/thumbs/10.jpg'
-
-import full01 from '../assets/images/fulls/01.jpg'
-import full02 from '../assets/images/fulls/02.jpg'
-import full03 from '../assets/images/fulls/03.jpg'
-import full04 from '../assets/images/fulls/04.jpg'
-import full05 from '../assets/images/fulls/05.jpg'
-import full06 from '../assets/images/fulls/06.jpg'
 
 const DEFAULT_IMAGES = [
   {
@@ -77,6 +70,8 @@ const PORTFOLIO = [
       "I'm part of a team that's implementing 3rd party game providers and modernizing an existing stack",
     tech: [
       'Java',
+      'Springboot',
+      'Postman',
       'msSQL',
       'Jenkins'
     ],
@@ -96,8 +91,6 @@ const PORTFOLIO = [
       'python',
       'AWS Services 10+',
       'TFS',
-      'html',
-      'css',
     ],
   },
   {
@@ -109,17 +102,13 @@ const PORTFOLIO = [
     description:
       'We created an intelligence platform that helped brands understand their social media communities & content, identify nano-influencers, and build data-driven campaigns that increased ROI.',
     tech: [
-      'vuejs',
-      'Laravel',
-      'OrientDB(graph db)',
-      'mysql',
-      'posgreSQL',
-      'SASS',
+      'JS',
+      'PHP',
+      'OrientDB',
+      'SQL',
       'docker',
       'python',
-      'AWS Services 10+',
-      'html',
-      'css',
+      'AWS Services 10+'
     ],
   },
   {
@@ -212,10 +201,39 @@ const PORTFOLIO = [
 ]
 
 class HomeIndex extends React.Component {
-  errorMessage = ''
+  constructor() {
+    super()
+    this.state = { name: undefined, email: undefined, message: undefined, for: undefined, errorMessage: '' }
+
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
+  }
+
+  handleChange(event) {
+    this.setState({[event.target.name]: event.target.value});
+  }
 
   handleSubmit(event) {
-    event.preventDefault()
+    event.preventDefault();
+    if (this.state.name && this.state.message && this.state.email) {
+      emailjs
+        .sendForm(
+          "default_service",
+          "template_9uz9Jewh",
+          event.target,
+          "user_gMbxswxT5ffCUwi4JUVV9"
+        )
+        .then(
+          () => {
+            this.setState({ name: undefined, email: undefined, message: undefined, for: undefined, errorMessage: '' })
+          },
+          () => {
+            this.setState({errorMessage: "Error sending mail. Please email directly philip@ootw.co.za."});
+          }
+        );
+    } else {
+      this.setState({errorMessage: "Not all fields have been entered"})
+    }
   }
 
   render() {
@@ -238,6 +256,8 @@ class HomeIndex extends React.Component {
               I believe programming should make our lives/daily tasks easier and
               improve efficiency. That said, my job satisfaction largely comes
               from developing purposeful builds and contributing to solutions.
+              <br/><br/>
+              Recently got <a href="https://www.youracclaim.com/badges/db8ff50f-63ce-4d22-b831-4bf3899a0c5b/linked_in_profile" target="_blank" rel="noreferrer">certified</a> by AWS. And busy with the next one.
             </p>
             {/* <ul className="actions">
               <li>
@@ -322,22 +342,26 @@ class HomeIndex extends React.Component {
                     <div className="6u 12u$(xsmall)">
                       <input
                         type="text"
-                        name="name"
                         id="name"
                         placeholder="Name"
+                        name="name"
+                        value={this.state.name}
+                        onChange={this.handleChange}
                       />
                     </div>
                     <div className="6u 12u$(xsmall)">
                       <input
                         type="email"
-                        name="email"
                         id="email"
+                        name="email"
                         placeholder="Email"
+                        value={this.state.email}
+                        onChange={this.handleChange}
                       />
                     </div>
                     <div className="12u">
                       <div>
-                        <select>
+                        <select value={this.state.for} onBlur={this.handleChange} name="for">
                           <option value="Websites">Websites</option>
                           <option value="hire">Hire</option>
                           <option value="freelance">Freelance</option>
@@ -347,20 +371,22 @@ class HomeIndex extends React.Component {
                     </div>
                     <div className="12u">
                       <textarea
-                        name="message"
                         id="message"
                         placeholder="Message"
                         rows="4"
+                        value={this.state.message}
+                        onChange={this.handleChange}
+                        name="message"
                       />
                     </div>
                   </div>
                   <br />
-                  <div>{this.errorMessage}</div>
-                  {/* <ul className="actions">
+                  <div className="errorMessage">{this.state.errorMessage}</div>
+                  <ul className="actions">
                     <li>
                       <input type="submit" value="Send Message" />
                     </li>
-                  </ul> */}
+                  </ul>
                 </form>
               </div>
               <div className="4u 12u$(small)">
