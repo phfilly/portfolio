@@ -35,7 +35,6 @@ class Gallery extends Component {
 
       let site = ''
       if (obj.site) {
-        site = '|'
         site = (
           <a href={obj.site} className="view-site">
             view site
@@ -43,8 +42,15 @@ class Gallery extends Component {
         )
       }
 
+      let duration = ''
+      if (obj.duration) {
+        duration = (
+          <small className="duration">{obj.duration}</small>
+        )
+      }
+
       return (
-        <article className="6u 12u$(xsmall) work-item" key={i}>
+        <div className="work-item" key={i}>
           <a
             className="image fit thumb"
             href={obj.source}
@@ -54,18 +60,19 @@ class Gallery extends Component {
             }}
           >
             <img src={obj.thumbnail} alt={obj.thumbnail} />
+            {site}
           </a>
 
           <h3>
-            {obj.caption} {site}
+            {obj.caption} {duration}
           </h3>
           <p>{obj.description}</p>
           <div className="stack-container">{techStack}</div>
-        </article>
+        </div>
       )
     })
 
-    return <div className="row">{gallery}</div>
+    return <div class="article-container">{gallery}</div>
   }
   render() {
     const { images } = this.props

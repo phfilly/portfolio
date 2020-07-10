@@ -211,6 +211,11 @@
 		}
 	}
 
+	article {
+		padding: 10px;
+		width: 100%;
+	}
+
 	header {
 		p {
 			color: _palette(fg-light);
@@ -879,8 +884,15 @@
 
 /* Work Item */
 
+	.article-container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
 	.work-item {
-		margin: 0 0 _size(element-margin) 0;
+
+		max-width: 380px;
+		margin: 10px;
 
 		.image {
 			margin: 0 0 (_size(element-margin) * 0.75) 0;
@@ -893,6 +905,12 @@
 
 		.view-site {
 			color: _palette(accent2, bg);
+			float: right;
+			font-size: 14px;
+		}
+
+		.duration {
+			font-size: 12px;
 			float: right;
 		}
 
@@ -1022,6 +1040,7 @@
 			border-top: solid 2px _palette(border);
 			margin: $size-header-pad 0 0 0;
 			padding: $size-header-pad 0 0 0;
+			clear: both;
 
 			&:first-child {
 				border-top: 0;
