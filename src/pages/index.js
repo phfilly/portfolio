@@ -254,6 +254,17 @@ class HomeIndex extends React.Component {
   render() {
     const siteTitle = 'Philip du Toit - Software Developer'
     const siteDescription = 'Software Developer'
+    const injectGA = () => {
+      if (typeof window == 'undefined') {
+        return;
+      }
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-173071405-1');
+    };
 
     return (
       <Layout>
@@ -434,6 +445,8 @@ class HomeIndex extends React.Component {
             </div>
           </section>
         </div>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173071405-1" />
+        <script>{injectGA()}</script>
       </Layout>
     )
   }

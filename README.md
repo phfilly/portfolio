@@ -5,3 +5,7 @@
 ## Preview
 
 https://philipdutoit.netlify.app/
+
+## Run development
+
+Run this command for local development `npm run develop`
