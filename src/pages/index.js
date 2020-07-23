@@ -283,7 +283,7 @@ class HomeIndex extends React.Component {
               improve efficiency. That said, my job satisfaction largely comes
               from developing purposeful builds and contributing to solutions.
               <br/><br/>
-              Recently got <a href="https://www.youracclaim.com/badges/db8ff50f-63ce-4d22-b831-4bf3899a0c5b/linked_in_profile" target="_blank" rel="noreferrer">certified</a> by AWS. And busy with the next one.
+              Recently received my AWS certifications for Solutions Architect and <a href="https://www.youracclaim.com/badges/db8ff50f-63ce-4d22-b831-4bf3899a0c5b/linked_in_profile" target="_blank" rel="noreferrer">Developer associate</a>. 
             </p>
             {/* <ul className="actions">
               <li>
