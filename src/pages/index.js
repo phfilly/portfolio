@@ -36,7 +36,7 @@ class HomeIndex extends React.Component {
             this.setState({ name: undefined, email: undefined, message: undefined, for: undefined, errorMessage: '' })
           },
           () => {
-            this.setState({errorMessage: "Error sending mail. Please email directly philip@ootw.co.za."});
+            this.setState({errorMessage: "Error sending mail. Please email directly philipdutoit7557@gmail.com."});
           }
         );
     } else {
@@ -133,7 +133,7 @@ class HomeIndex extends React.Component {
 
             <ul className="actions">
               <li>
-                <a href="mailto:philip@ootw.co.za" className="button">
+                <a href="mailto:philipdutoit7557@gmail.com" className="button">
                   Want more info?
                 </a>
               </li>
@@ -143,12 +143,7 @@ class HomeIndex extends React.Component {
           <section id="three">
             <h2>What I'm busy with</h2>
             <p>
-              Currently stationed as a consultant at a wagering solutions
-              client, creating a product for online & high traffic use.
-              Bookmakers are able to fully customise their client facing
-              software in a safe & secure way. Ultimately, the product will be
-              SANS & GLI approved - working through and with the required
-              regulations makes an interesting challenge.
+              Heading up the frontend team in Rotterdam to build a world class sport PWA that should support very high traffic use and cater for an international audience
             </p>
           </section>
 
@@ -215,23 +210,21 @@ class HomeIndex extends React.Component {
                     <h3 className="icon fa-home">
                       <span className="label">Address</span>
                     </h3>
-                    Oranjezicht
+                    Rotterdam
                     <br />
-                    Cape Town
-                    <br />
-                    South Africa
+                    Netherlands
                   </li>
                   <li>
                     <h3 className="icon fa-mobile">
                       <span className="label">Phone</span>
                     </h3>
-                    +27 83 401 6400
+                    +31 6 3368 7813
                   </li>
                   <li>
                     <h3 className="icon fa-envelope-o">
                       <span className="label">Email</span>
                     </h3>
-                    <a href="mailto:philip@ootw.co.za">philip@ootw.co.za</a>
+                    <a href="mailto:philipdutoit7557@gmail.com">philipdutoit7557@gmail.com</a>
                   </li>
                 </ul>
               </div>

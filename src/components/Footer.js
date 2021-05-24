@@ -28,7 +28,7 @@ class Footer extends React.Component {
             </li>
             <li>
               <a
-                href="mailto:philip@ootw.co.za"
+                href="mailto:philipdutoit7557@gmail.com"
                 className="icon fa-envelope-o"
                 target="_blank"
                 rel="noreferrer"

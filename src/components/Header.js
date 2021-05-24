@@ -13,7 +13,7 @@ class Header extends React.Component {
           <h1>
             <strong>Hi, I'm Philip</strong>, a software developer
             <br />
-            &nbsp;from Cape Town, South Africa.
+            &nbsp; in Rotterdam, Netherlands
             <br />
           </h1>
         </div>
