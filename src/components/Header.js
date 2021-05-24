@@ -11,9 +11,9 @@ class Header extends React.Component {
             <img src={avatar} alt="avatar" />
           </div>
           <h1>
-            <strong>Hi, I'm Philip</strong>, a software developer
+            <strong>Hi! I'm Philip</strong>, a software developer
             <br />
-            &nbsp; in Rotterdam, Netherlands
+            &nbsp; in Rotterdam - The Netherlands
             <br />
           </h1>
         </div>

@@ -212,7 +212,7 @@ class HomeIndex extends React.Component {
                     </h3>
                     Rotterdam
                     <br />
-                    Netherlands
+                    The Netherlands
                   </li>
                   <li>
                     <h3 className="icon fa-mobile">
