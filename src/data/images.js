@@ -11,7 +11,7 @@ export const DEFAULT_IMAGES = [
       source: thumb05,
       thumbnail: thumb05,
       caption: 'Team lead at Gek van Software & Spoxx',
-      duration: '7 months - current',
+      duration: '8 months - current',
       description:
         'Heading up the frontend team in Rotterdam to build a world class sport PWA that should support very high traffic use and cater for an international audience',
     },
@@ -19,10 +19,10 @@ export const DEFAULT_IMAGES = [
       id: '2',
       source: thumb00,
       thumbnail: thumb00,
-      caption: 'Co-Founder & Developer',
-      duration: '6 years - current',
+      caption: 'Co-Founder',
+      duration: '7 years - current',
       description:
-        'Been freelancing for the last 6 years in my free-time and slowly accumulated a steady client base. I have been fortunate to have clients in different industries but primarily only building web solutions that will help small sized businesses to have an online/ecommerce presence',
+        'Small freelance business with my wife where we help small businesses to build an online presence',
     },
     {
       id: '3',
