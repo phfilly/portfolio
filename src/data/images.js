@@ -10,17 +10,17 @@ export const DEFAULT_IMAGES = [
       id: '1',
       source: thumb05,
       thumbnail: thumb05,
-      caption: 'Team lead at Gek van Software & Spoxx',
-      duration: '8 months - current',
+      caption: 'Team lead at Most.dev & AXXS',
+      duration: '2020 - current',
       description:
-        'Heading up the frontend team in Rotterdam to build a world class sport PWA that should support very high traffic use and cater for an international audience',
+        'Heading up the frontend team in Rotterdam to build a world class sport PWA that supports very high traffic use and cater for an international audience that is enthusiastic about soccer',
     },
     {
       id: '2',
       source: thumb00,
       thumbnail: thumb00,
       caption: 'Co-Founder',
-      duration: '7 years - current',
+      duration: '7+ years',
       description:
         'Small freelance business with my wife where we help small businesses to build an online presence',
     },
