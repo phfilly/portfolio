@@ -3,26 +3,17 @@ import thumb01 from '../assets/images/thumbs/01.jpg'
 import thumb02 from '../assets/images/thumbs/02.jpg'
 import thumb03 from '../assets/images/thumbs/03.jpg'
 import thumb04 from '../assets/images/thumbs/04.jpg'
-import thumb05 from '../assets/images/thumbs/gvs.svg'
+import thumb05 from '../assets/images/thumbs/axxs.png'
 
 export const DEFAULT_IMAGES = [
     {
       id: '1',
       source: thumb05,
       thumbnail: thumb05,
-      caption: 'Team lead at Most.dev & AXXS',
+      caption: 'Team lead at AXXS',
       duration: '2020 - current',
       description:
         'Heading up the frontend team in Rotterdam to build a world class sport PWA that supports very high traffic use and cater for an international audience that is enthusiastic about soccer',
-    },
-    {
-      id: '2',
-      source: thumb00,
-      thumbnail: thumb00,
-      caption: 'Co-Founder',
-      duration: '7+ years',
-      description:
-        'Small freelance business with my wife where we help small businesses to build an online presence',
     },
     {
       id: '3',
