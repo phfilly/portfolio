@@ -3,7 +3,7 @@ import thumb01 from '../assets/images/thumbs/01.jpg'
 import thumb02 from '../assets/images/thumbs/02.jpg'
 import thumb03 from '../assets/images/thumbs/03.jpg'
 import thumb04 from '../assets/images/thumbs/04.jpg'
-import thumb05 from '../assets/images/thumbs/axxs.png'
+import thumb05 from '../assets/images/thumbs/axxs-logo.png'
 
 export const DEFAULT_IMAGES = [
     {
