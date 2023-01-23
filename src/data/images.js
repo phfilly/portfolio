@@ -13,7 +13,7 @@ export const DEFAULT_IMAGES = [
       caption: 'Team lead at AXXS',
       duration: '2020 - current',
       description:
-        'Heading up the frontend team in Rotterdam to build a world class sport PWA that supports very high traffic use and cater for an international audience that is enthusiastic about soccer',
+        'Heading up the frontend team in s-Hertogenbosch to build a world class sport PWA that supports very high traffic use and cater for an international audience that is enthusiastic about soccer',
     },
     {
       id: '3',
