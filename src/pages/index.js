@@ -36,7 +36,7 @@ class HomeIndex extends React.Component {
             this.setState({ name: undefined, email: undefined, message: undefined, for: undefined, errorMessage: '' })
           },
           () => {
-            this.setState({errorMessage: "Error sending mail. Please email directly philipdutoit7557@gmail.com."});
+            this.setState({errorMessage: "Error sending mail. Please email me directly at philipdutoit7557@gmail.com."});
           }
         );
     } else {
@@ -45,8 +45,8 @@ class HomeIndex extends React.Component {
   }
 
   render() {
-    const siteTitle = 'Philip du Toit - Software Developer'
-    const siteDescription = 'Software Developer'
+    const siteTitle = 'Philip du Toit - Software Engineer'
+    const siteDescription = 'Software Engineer'
     const injectGA = () => {
       if (typeof window == 'undefined') {
         return;
@@ -143,7 +143,7 @@ class HomeIndex extends React.Component {
           <section id="three">
             <h2>What I'm busy with</h2>
             <p>
-              Heading up the frontend team in Rotterdam to build a world class sport PWA that should support very high traffic use and cater for an international audience
+              Heading up the frontend team in 's-Hertogenbosch to build a world class sport PWA that should support very high traffic use and cater for an international audience
             </p>
           </section>
 
@@ -210,7 +210,7 @@ class HomeIndex extends React.Component {
                     <h3 className="icon fa-home">
                       <span className="label">Address</span>
                     </h3>
-                    Rotterdam
+                    's-Hertogenbosch
                     <br />
                     The Netherlands
                   </li>
